@@ -4,7 +4,7 @@ import 'moment/locale/it';
 import { useEffect, useState } from 'react';
 import PostCard from '../../components/PostCard';
 import { Post } from '../../types';
-import data from '../../data/posts.json';
+import data from '../../data/postsAnalisi.json';
 import { useAuthPage } from '../../hooks';
 import { useRouter } from 'next/router';
 
@@ -28,9 +28,10 @@ const Analisi: NextPage<{ posts: Post[] }> = ({ posts }: { posts: Post[] }) => {
         {router.query.url}
       </p>
       <div className='flex flex-col flex-1 items-center justify-between w-3/4 overflow-auto'>
-        {posts.map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+        {posts.map((post) => {
+          post.image = '../../falsehierarchy.jpg';
+          return <PostCard key={post.id} post={post} />;
+        })}
       </div>
     </div>
   );

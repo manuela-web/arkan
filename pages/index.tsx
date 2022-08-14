@@ -194,7 +194,9 @@ const Home: NextPage = () => {
             </div>
             <div
               onClick={() => {
-                if (url.includes('://')) {
+                if (url === '') {
+                  return;
+                } else if (url.includes('://')) {
                   const escapedUrl = url
                     .replace('http://', '')
                     .replace('https://', '')

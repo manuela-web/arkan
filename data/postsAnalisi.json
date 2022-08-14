@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "dpName": "False Hierarchy",
+      "image": "falsehierarchy.jpg",
+      "dims": {
+        "width": 300,
+        "height": 270
+      },
+      "website": "http://example.com",
+      "date": "2020-01-01",
+      "type": 0,
+      "description": "È un dark pattern con il quale si cerca di convincere l’utente ad effettuare una scelta piuttosto che un’altra rendendola più appetibile con maggiori decorazioni o più interattività. In particolare si cerca di dare l’impressione che l’opzione evidenziata sia l’unica o la migliore.",
+      "comments": [
+        {
+          "id": 1,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Ormai utilizzano questi design molto appariscenti per far cadere l'occhio altrove",
+          "likes": 3,
+          "isLiked": false
+        },
+        {
+          "id": 2,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Cercano in tutti i modi di farci fare cose...piuttosto che altre!!!",
+          "likes": 4,
+          "isLiked": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dpName": "HIDDEN_COSTS",
+      "image": "disguisedad.jpg",
+      "dims": {
+        "width": 400,
+        "height": 300
+      },
+      "website": "http://example.com",
+      "date": "2022-01-01",
+      "type": 1,
+      "description": "Some description of this dark pattern since there’s no additional info as it was found by the system. ",
+      "comments": [
+        {
+          "id": 1,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Some text about dark patterns",
+          "likes": 20,
+          "isLiked": true
+        },
+        {
+          "id": 2,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Some text about dark patterns with a lot of text that should go on another line and let the image still be on top of the container",
+          "likes": 5,
+          "isLiked": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "dpName": "HIDDEN_COSTS",
+      "image": "disguisedad.jpg",
+      "dims": {
+        "width": 400,
+        "height": 300
+      },
+      "website": "http://example.com",
+      "date": "2022-01-01",
+      "type": 1,
+      "description": "Some description of this dark pattern since there’s no additional info as it was found by the system. ",
+      "comments": [
+        {
+          "id": 1,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Some text about dark patterns",
+          "likes": 20,
+          "isLiked": true
+        },
+        {
+          "id": 2,
+          "user": {
+            "name": "Giovanni Scorziello"
+          },
+          "text": "Some text about dark patterns with a lot of text that should go on another line and let the image still be on top of the container",
+          "likes": 5,
+          "isLiked": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 export type Post = {
   id: number;
   dpName: 'HIDDEN_COSTS';
+  image: string;
+  dims: {
+    width: number;
+    height: number;
+  };
   website: string;
   date: string;
   type: 0 | 1;

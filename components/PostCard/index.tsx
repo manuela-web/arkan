@@ -12,6 +12,7 @@ import {
   ModalOverlay,
   Divider,
   ButtonGroup,
+  Image,
 } from '@chakra-ui/react';
 import clsx from 'clsx';
 import moment from 'moment';
@@ -33,11 +34,11 @@ type Props = {
   onComment?: (comment: string, post: Post) => void;
   label?: string;
 };
-
+/*
 const darkPatternsNames = {
   HIDDEN_COSTS: 'Hidden Costs',
 };
-
+*/
 const POST_TYPE = {
   0: 'AUTO',
   1: 'REPORT',
@@ -125,8 +126,8 @@ const PostCard = ({ post, label }: Props) => {
               <div className='flex flex-col justify-center'>
                 <div className='flex flex-1 justify-between items-center'>
                   <div className='flex items-center'>
-                    <h1 className='font-bold text-secondary-main text-3xl'>
-                      {darkPatternsNames[post.dpName]}
+                    <h1 className='font-bold text-secondary-main text-2xl'>
+                      {post.dpName}
                     </h1>
                     <span
                       onClick={() => {
@@ -173,6 +174,13 @@ const PostCard = ({ post, label }: Props) => {
           <h1 className='border-b-2 border-gray-300 pb-4'>
             {post.description}
           </h1>
+          <div className='flex justify-center items-center border-b-2 border-gray-300 pt-3 pb-3'>
+            <Image
+              src={post.image}
+              width={post.dims.width}
+              height={post.dims.height}
+            />
+          </div>
           {/* Comments */}
           <div className='flex flex-col mt-4'>
             <div className='flex items-center mb-2'>
